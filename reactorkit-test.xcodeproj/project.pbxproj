@@ -74,6 +74,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6283FDD226AD88D7008B1B0B /* SupportingFile */ = {
+			isa = PBXGroup;
+			children = (
+				62BADD4C26AD7FA20011D8E4 /* Info.plist */,
+			);
+			path = SupportingFile;
+			sourceTree = "<group>";
+		};
+		6283FDD326AD88E6008B1B0B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				62BADD4726AD7FA20011D8E4 /* Assets.xcassets */,
+				62BADD4926AD7FA20011D8E4 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		6283FDD426AD88F1008B1B0B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				62BADD3E26AD7F9F0011D8E4 /* AppDelegate.swift */,
+				62BADD4026AD7F9F0011D8E4 /* SceneDelegate.swift */,
+				6283FDD826AD893A008B1B0B /* Model */,
+				6283FDD726AD8932008B1B0B /* View */,
+				6283FDD626AD8923008B1B0B /* ViewController */,
+				6283FDD526AD8912008B1B0B /* Utils */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		6283FDD526AD8912008B1B0B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6283FDD626AD8923008B1B0B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				62BADD4226AD7F9F0011D8E4 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6283FDD726AD8932008B1B0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6283FDD826AD893A008B1B0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		62BADD3226AD7F9F0011D8E4 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +156,9 @@
 		62BADD3D26AD7F9F0011D8E4 /* reactorkit-test */ = {
 			isa = PBXGroup;
 			children = (
-				62BADD3E26AD7F9F0011D8E4 /* AppDelegate.swift */,
-				62BADD4026AD7F9F0011D8E4 /* SceneDelegate.swift */,
-				62BADD4226AD7F9F0011D8E4 /* ViewController.swift */,
-				62BADD4726AD7FA20011D8E4 /* Assets.xcassets */,
-				62BADD4926AD7FA20011D8E4 /* LaunchScreen.storyboard */,
-				62BADD4C26AD7FA20011D8E4 /* Info.plist */,
+				6283FDD426AD88F1008B1B0B /* Source */,
+				6283FDD326AD88E6008B1B0B /* Resource */,
+				6283FDD226AD88D7008B1B0B /* SupportingFile */,
 			);
 			path = "reactorkit-test";
 			sourceTree = "<group>";
@@ -426,7 +482,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q23JLSJCCV;
-				INFOPLIST_FILE = "reactorkit-test/Info.plist";
+				INFOPLIST_FILE = "reactorkit-test/SupportingFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -445,7 +501,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q23JLSJCCV;
-				INFOPLIST_FILE = "reactorkit-test/Info.plist";
+				INFOPLIST_FILE = "reactorkit-test/SupportingFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
