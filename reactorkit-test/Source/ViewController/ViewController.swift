@@ -89,6 +89,12 @@ class ViewController: BaseViewController, View {
             .map { "\($0)" }
             .bind(to: label.rx.text)
             .disposed(by: disposeBag)
+        
+        reactor.state
+            .map { $0.isLoading }
+            .distinctUntilChanged()
+            .bind(to: self.activityIndicatorView.rx.isAnimating)
+            .disposed(by: disposeBag)
     }
 
 }

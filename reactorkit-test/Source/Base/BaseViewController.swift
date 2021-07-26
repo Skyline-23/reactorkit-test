@@ -15,6 +15,9 @@ import SnapKit
 class BaseViewController: UIViewController {
     
     // MARK: - Properties
+    let activityIndicatorView = UIActivityIndicatorView(style: .large).then {
+        $0.color = .systemBlue
+    }
     
     // MARK: - Initializing
     
@@ -26,6 +29,10 @@ class BaseViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    deinit {
+        activityIndicatorView.stopAnimating()
+    }
+    
     // MARK: - Rx
     var disposeBag = DisposeBag()
     
@@ -35,6 +42,12 @@ class BaseViewController: UIViewController {
         self.makeConstraints()
         
         view.backgroundColor = .systemBackground
+        
+        self.view.addSubview(self.activityIndicatorView)
+        
+        self.activityIndicatorView.snp.makeConstraints {
+            $0.center.equalToSuperview()
+        }
     }
     
     func setupLayout() {
