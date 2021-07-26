@@ -7,13 +7,31 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+import ReactorKit
 
+class ViewController: BaseViewController, View {
+    
+    
+    
+    typealias Reactor = ViewControllerReactor
+    
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    override func setupLayout() {
+        <#code#>
+    }
+    
+    override func makeConstraints() {
+        
+    }
 
+    func bind(reactor: ViewControllerReactor) {
+        <#code#>
+    }
 
 }
 
