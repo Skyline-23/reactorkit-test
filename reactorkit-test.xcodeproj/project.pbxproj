@@ -3,11 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		54F8ED362C2CD282C64E8097 /* Pods_reactorkit_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89985FDD0A7FE7D06EBC0963 /* Pods_reactorkit_test.framework */; };
+		6283FDDC26AD8C5D008B1B0B /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6283FDDB26AD8C5D008B1B0B /* Preview.swift */; };
+		6283FDDE26AD8C99008B1B0B /* UIViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6283FDDD26AD8C99008B1B0B /* UIViewControllerPreview.swift */; };
+		6283FDE026AD8E73008B1B0B /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6283FDDF26AD8E73008B1B0B /* DeviceType.swift */; };
+		6283FDE226AD8EA2008B1B0B /* UIViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6283FDE126AD8EA2008B1B0B /* UIViewPreview.swift */; };
+		6283FDE426ADA540008B1B0B /* ViewControllerReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6283FDE326ADA540008B1B0B /* ViewControllerReactor.swift */; };
+		6283FDE726AE62E7008B1B0B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6283FDE626AE62E7008B1B0B /* BaseViewController.swift */; };
 		62BADD3F26AD7F9F0011D8E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BADD3E26AD7F9F0011D8E4 /* AppDelegate.swift */; };
 		62BADD4126AD7F9F0011D8E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BADD4026AD7F9F0011D8E4 /* SceneDelegate.swift */; };
 		62BADD4326AD7FA00011D8E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BADD4226AD7F9F0011D8E4 /* ViewController.swift */; };
@@ -39,6 +45,12 @@
 /* Begin PBXFileReference section */
 		33C7AB718F5C7DC51452F0C3 /* Pods-reactorkit-test-reactorkit-testUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactorkit-test-reactorkit-testUITests.release.xcconfig"; path = "Target Support Files/Pods-reactorkit-test-reactorkit-testUITests/Pods-reactorkit-test-reactorkit-testUITests.release.xcconfig"; sourceTree = "<group>"; };
 		371E030FA871A9D6A94173D0 /* Pods_reactorkit_test_reactorkit_testUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_reactorkit_test_reactorkit_testUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6283FDDB26AD8C5D008B1B0B /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		6283FDDD26AD8C99008B1B0B /* UIViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerPreview.swift; sourceTree = "<group>"; };
+		6283FDDF26AD8E73008B1B0B /* DeviceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
+		6283FDE126AD8EA2008B1B0B /* UIViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewPreview.swift; sourceTree = "<group>"; };
+		6283FDE326ADA540008B1B0B /* ViewControllerReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerReactor.swift; sourceTree = "<group>"; };
+		6283FDE626AE62E7008B1B0B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		62BADD3B26AD7F9F0011D8E4 /* reactorkit-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "reactorkit-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62BADD3E26AD7F9F0011D8E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62BADD4026AD7F9F0011D8E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,7 +111,6 @@
 				BB559A6767388E6765829ABD /* Pods-reactorkit-testTests.debug.xcconfig */,
 				DEC181D56039F7AE4EDAF72B /* Pods-reactorkit-testTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -138,6 +149,7 @@
 				6283FDD826AD893A008B1B0B /* Model */,
 				6283FDD726AD8932008B1B0B /* View */,
 				6283FDD626AD8923008B1B0B /* ViewController */,
+				6283FDE526AE62AA008B1B0B /* Base */,
 				6283FDD526AD8912008B1B0B /* Utils */,
 			);
 			path = Source;
@@ -146,6 +158,9 @@
 		6283FDD526AD8912008B1B0B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				6283FDDD26AD8C99008B1B0B /* UIViewControllerPreview.swift */,
+				6283FDE126AD8EA2008B1B0B /* UIViewPreview.swift */,
+				6283FDDF26AD8E73008B1B0B /* DeviceType.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -154,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				62BADD4226AD7F9F0011D8E4 /* ViewController.swift */,
+				6283FDE326ADA540008B1B0B /* ViewControllerReactor.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -170,6 +186,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		6283FDE526AE62AA008B1B0B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6283FDE626AE62E7008B1B0B /* BaseViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		62BADD3226AD7F9F0011D8E4 = {
@@ -197,6 +221,7 @@
 		62BADD3D26AD7F9F0011D8E4 /* reactorkit-test */ = {
 			isa = PBXGroup;
 			children = (
+				6283FDDB26AD8C5D008B1B0B /* Preview.swift */,
 				6283FDD426AD88F1008B1B0B /* Source */,
 				6283FDD326AD88E6008B1B0B /* Resource */,
 				6283FDD226AD88D7008B1B0B /* SupportingFile */,
@@ -461,6 +486,12 @@
 			files = (
 				62BADD4326AD7FA00011D8E4 /* ViewController.swift in Sources */,
 				62BADD3F26AD7F9F0011D8E4 /* AppDelegate.swift in Sources */,
+				6283FDDE26AD8C99008B1B0B /* UIViewControllerPreview.swift in Sources */,
+				6283FDE026AD8E73008B1B0B /* DeviceType.swift in Sources */,
+				6283FDE226AD8EA2008B1B0B /* UIViewPreview.swift in Sources */,
+				6283FDE726AE62E7008B1B0B /* BaseViewController.swift in Sources */,
+				6283FDE426ADA540008B1B0B /* ViewControllerReactor.swift in Sources */,
+				6283FDDC26AD8C5D008B1B0B /* Preview.swift in Sources */,
 				62BADD4126AD7F9F0011D8E4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
