@@ -9,6 +9,8 @@ import UIKit
 
 import RxSwift
 import RxCocoa
+import Then
+import SnapKit
 
 class BaseViewController: UIViewController {
     
@@ -25,15 +27,14 @@ class BaseViewController: UIViewController {
     }
     
     // MARK: - Rx
-    
     var disposeBag = DisposeBag()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupLayout()
         self.makeConstraints()
-        // Do any additional setup after loading the view.
+        
+        view.backgroundColor = .systemBackground
     }
     
     func setupLayout() {
